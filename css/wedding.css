@@ -1,0 +1,222 @@
+.navbar{
+    background-color: #5C7285;
+}
+.container-fluid{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.login{
+    border-radius: 12px;
+}
+.navbar-nav .nav-link{
+    color: #E2E0C8;
+    font-size: 17px;
+    font-family: play-fair;
+}
+.navbar-nav .nav-link:hover{
+    color: white;
+}
+.form-control:focus {
+    border-color: #E2E0C8 !important;
+    box-shadow: 0 0 5px #E2E0C8 !important;
+}
+.dest {
+    background-image: url('/images/wedding.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dest h1 {
+    color: black;
+    font-size: 50px;
+    font-family: play-fair;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+}
+.container p{
+    font-family: poppins;
+    font-size: 1.1rem;
+    /* color: #555; */
+    line-height: 1.6;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid #f97316;
+    font-family: play-fair;
+    display: inline-block;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.destination-card {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination-card img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.destination-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+.destination-name {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.why-destination {
+    background-color: #fff; 
+    padding: 50px 0;
+}
+
+.content-container {
+    max-width: auto;
+    margin-left: 20px;
+    margin-right: 12px;
+    text-align: left;
+}
+
+.why-destination h2 {
+    font-size: 2rem;
+    font-family: play-fair;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.why-destination p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    font-family: poppins;
+}
+
+.destination {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 180px; 
+    margin: 5px 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.box.b{
+    height: 300px;
+}
+
+.box.bb{
+    height: 150px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+.box:hover .overlay {
+    opacity: 1;
+}
+
+footer{
+    background-color: #5C7285;
+    padding-top: 30px;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .dest h1 {
+        font-size: 40px;
+    }
+    .heading {
+        font-size: 1.8rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dest h1 {
+        font-size: 35px;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .sub-heading {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 10px;
+        text-align: center;
+    }
+    .content-container {
+        margin: 0 auto; 
+        text-align: center;
+        padding: 0 15px;
+    }
+    .box {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
